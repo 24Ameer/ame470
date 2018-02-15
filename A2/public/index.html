@@ -5,6 +5,12 @@
   <script>
 function sendToServer(){
   // complete this function.
+	var uInput . "100-99";
+	var url = "./eval?eq="+ uInput;
+	console.log(url);
+	loadFile(url, function(resData){
+		$("#result").html(resData)
+	})
   //  you can use loadFile()
 }
   </script>
